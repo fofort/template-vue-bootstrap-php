@@ -1,0 +1,14 @@
+SetEnv APP_ENV "local" 
+SetEnv APP_DB_SERVER="localhost"
+SetEnv APP_DB_USERNAME="root"
+SetEnv APP_DB_PASSWORD=""
+SetEnv APP_DB_NAME="pointfermeture"
+ErrorDocument 403 "Sorry, you do not have permission to access this file"
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
