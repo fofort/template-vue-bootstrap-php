@@ -1,0 +1,13 @@
+SetEnv APP_ENV "local" 
+SetEnv APP_DB_SERVER="localhost"
+SetEnv APP_DB_USERNAME="root"
+SetEnv APP_DB_PASSWORD=""
+SetEnv APP_DB_NAME="dbname"
+
+
+# rewritting rule for php app we take api as main folder
+RewriteEngine On
+RewriteBase /api/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /api/index.php [QSA,L]

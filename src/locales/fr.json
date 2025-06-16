@@ -1,0 +1,13 @@
+{
+    "login": {
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "signIn": "Se Connecter"
+    },
+    "userTracking": {
+        "start": "Arrivé",
+        "end": "Départ",
+        "startBreak": "Début Pause",
+        "endBreak": "Fin Pause"
+    }
+}

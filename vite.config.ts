@@ -10,8 +10,7 @@ import { rm } from 'node:fs/promises'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
-    
+    vueDevTools(),    
     {
       name: "Cleaning assets folder",
       async buildStart() {
